@@ -4,17 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import network.bobnet.quantumgrid.post_service.enums.PostStatus;
+import network.bobnet.quantumgrid.post_service.dto.CategoryDto;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
-public class CreatePostRequest {
+public class CreateCategoryRequest {
 
-    private String title;
+    private String name;
     private String slug;
-    private String content;
-    private Long authorId;
-    private PostStatus status;
+    private String description;
+    private CategoryDto parent;
 }
